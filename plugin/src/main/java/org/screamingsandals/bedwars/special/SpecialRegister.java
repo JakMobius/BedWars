@@ -30,6 +30,7 @@ public class SpecialRegister {
         plugin.getServer().getPluginManager().registerEvents(new LuckyBlockAddonListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new MagnetShoesListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new ProtectionWallListener(), plugin);
+        plugin.getServer().getPluginManager().registerEvents(new IndestructibleBridgeListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new RescuePlatformListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new TeamChestListener(), plugin);
         plugin.getServer().getPluginManager().registerEvents(new ThrowableFireballListener(), plugin);

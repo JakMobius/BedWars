@@ -72,6 +72,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -362,6 +363,7 @@ public class Main extends JavaPlugin implements BedwarsAPI {
     }
 
     public void onEnable() {
+        Logger.getGlobal().info("Hello!");
         instance = this;
         version = this.getDescription().getVersion();
         boolean snapshot = version.toLowerCase().contains("pre") || version.toLowerCase().contains("snapshot");
